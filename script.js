@@ -1,21 +1,69 @@
-const email = "teste@teste.com"
-const senha = "123456"
-localStorage.setItem(email,senha)
 
-cont emailInput = Document.getelementbyId(email")
-cont emailInput = Document.getelementbyId(senha")
-cont emailInput = Document.getelementbyId("formulario_login")
- 
-//quando o formulario for submetido
-//ele envia e atualiza a pagina 
-//esse evento padrao ("default") do html para a tag <form>
+
+
+const usuario = {} ;
+
+ const emailInput = Document.getelementbyId ("email")
+ const senhalInput = Document.getelementbyId ("senha")
+ const formulario = Document.getelementbyId ("formulario_login")
+  
 
 formulario.addEventListener("submit", (event) => {
     event.preventDefault()
-    const emaildigitado = imailinpult.Value
-    const senhadigitada = senhainput.value
+    const emaildigitado = emailInput.Value
+    const senhadigitada = senhaInput.value
 
-    console.log(emailInput.Value)
-    console.log(senhaInput.Value)
+// Buscar usuarios no local storage
+const usuarios = JSON.parse(localStorage.getItem("usuarios"))
+const usuarioEncontrado = usuarios.find((usuarios) => {
+  return (
+    usuario.email == emailDigitado && 
+    usuario.senha == senhaDigitada
+  )
 })
+
+}) 
+ //lembre de (id,email e senha), escrito somas duplas
+ const usuarios = {
+ } 
+
+  "id" : 1,
+  "email" :"durvaldo@TextDecoderStream.com" ,
+  "senha" : "senha123"
+{,  
+{
+    "id" : 2,
+    "email": "tiao@teste.com",
+    "senha": "password"
+
+},
+{
+
+    "id":3,
+    "email":"joisce@teste.com",
+     "senha": "passoca "
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT NOSSO -->
+ html>
+
+ "id":2,
+ "email":"tião@teste.com"
+ "senha":"password"
+ 
+
+
+
 
